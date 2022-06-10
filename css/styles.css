@@ -1,0 +1,557 @@
+html {
+    box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: inherit;
+}
+
+:root {
+    --primary-text-color: #212121;
+    --text-color: #757575;
+    --text-link: #2196F3;
+    --hero: #FFFFFF;
+    --background-team: #F5F4FA;
+    --bacground-color-hero: #2F303A;
+    --footer-color-text: rgba(255, 255, 255, 0.6);
+    --logo-studio: #000000;
+    --button-bcg: #F5F4FA;
+    --color-line: #ECECEC;
+
+
+}
+
+
+body {
+    font-family: 'Roboto',
+        sans-serif;
+    background-color: var(--hero);
+    color: var(--text-color);
+}
+
+ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+ul {
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+img {
+    width: 100%;
+}
+
+/* Шапка */
+
+/* Кольори */
+/* #212121 текст чорний */
+/*  #757575 колір номера телефону*/
+/* #2196F3 текст синій */
+.header {
+    border-bottom: 1px solid var(--color-line);
+
+}
+
+.header-logo {
+    display: block;
+    padding-top: 24px;
+    padding-bottom: 25px;
+    margin-right: 93px;
+
+    font-family: 'Raleway';
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 1.2;
+    letter-spacing: 0.03em;
+
+    text-decoration: none;
+}
+
+.header-logo .logo-web {
+    color: var(--text-link)
+}
+
+.header-logo .logo-studio {
+    color: var(--logo-studio);
+}
+
+.main-nav {
+    display: flex;
+    align-items: center;
+    /* justify-content: space-between; */
+}
+
+.header-nav {
+    display: flex;
+    align-items: center;
+
+}
+
+.nav-header {
+    display: flex;
+    align-items: center;
+}
+
+.header-nav .item+.item {
+    margin-left: 50px;
+}
+
+.header-nav .link {
+    display: block;
+    padding-top: 32px;
+    padding-bottom: 32px;
+
+    color: var(--primary-text-color);
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.02em;
+    text-decoration: none;
+}
+
+.header-nav .link.current {
+    color: var(--text-link);
+}
+
+.header-nav .link:hover,
+.header-nav .link:focus {
+    color: var(--text-link);
+}
+
+.header-contacting {
+    display: flex;
+    margin-left: auto;
+}
+
+.header-contacting .item+.item {
+    margin-left: 50px;
+}
+
+.header-contacting .link {
+    display: block;
+    padding-top: 32px;
+    padding-bottom: 32px;
+
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.02em;
+    color: var(--text-color);
+    text-decoration: none;
+}
+
+.header-contacting .link:hover,
+.header-contacting .link:focus {
+    color: var(--text-link);
+}
+
+.line {
+    color: var(--color-line);
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+/* Головна сторінка */
+/* фон головного заголовку background: #2F303A */
+/* фон сторінки background: background: #FFFFFF; */
+/* Фон Наша команда background: #F5F4FA */
+/* #FFFFFF головний заголовок і колір кнопки*/
+/* Середина */
+/* Секція заголовки#212121 */
+/* Секція тексти абзаци #757575 */
+/* Другий і наступний заголовок + Прізвище ім'я  #212121 */
+/* Професія #757575 */
+
+.container {
+    width: 1200px;
+    margin: 0 auto;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+/* HERO */
+
+.hero {
+    background-color: #2F303A;
+    padding: 200px 0;
+
+
+}
+
+.hero .container {
+    text-align: center;
+    /* height: 600px; */
+
+
+}
+
+.container .hero-title {
+    color: var(--hero);
+    font-weight: 900;
+    font-size: 44px;
+    line-height: 1.36;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    margin: 0 auto;
+    max-width: 696px;
+    width: 100%;
+    margin-bottom: 30px;
+}
+
+/* Кнопка */
+.hero .button {
+    display: inline;
+    font-family: inherit;
+    color: var(--hero);
+    background-color: var(--text-link);
+    /* position: absolute; */
+    min-width: 200px;
+    height: 50px;
+    /* left: 705px;
+    top: 430px; */
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    border-radius: 4px;
+    padding: 10px 32px;
+
+
+}
+
+.button {
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1.88;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    letter-spacing: 0.06em;
+
+    cursor: pointer;
+    border: 1px solid transparent;
+
+}
+
+/* SECTION середина */
+.section {
+    padding-top: 94px;
+    padding-bottom: 94px;
+
+
+}
+
+.section-block {
+    display: flex;
+    /* justify-content: space-between; */
+}
+
+.section-block .item+.item {
+    margin-left: 30px;
+}
+
+.section-block .section-text {
+    display: flex;
+}
+
+.section.second-bacground {
+    padding-top: 0;
+    padding-top: 94px;
+
+    background-color: var(--background-team);
+}
+
+.section-heading {
+    display: none;
+
+}
+
+.section.secondary-section {
+    padding-top: 0;
+}
+
+.section .section-title {
+
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.16;
+    text-align: center;
+    letter-spacing: 0.03em;
+
+    color: var(--primary-text-color);
+    margin-bottom: 50px;
+
+}
+
+/* SECTION IMAGES */
+
+.section .secondary-title {
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.16;
+    text-align: center;
+    letter-spacing: 0.03em;
+
+    color: var(--primary-text-color);
+    margin-bottom: 50px;
+}
+
+.section-images {
+    display: flex;
+}
+
+.section-images .item+.item {
+    margin-left: 30px;
+}
+
+.section-down {
+    display: flex;
+}
+
+.section-down .item+.item {
+    margin-left: 30px;
+}
+
+
+
+.section-secondary-block {
+    padding: 30px 0;
+}
+
+.section .section-title-second {
+
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    margin-bottom: 10px;
+
+    color: var(--primary-text-color);
+}
+
+.section .section-text {
+    max-width: 270px;
+    font-size: 14px;
+    line-height: 1.71;
+    letter-spacing: 0.03em;
+
+    /* color: var(--text-color); */
+}
+
+
+
+.section .section-name {
+
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.18;
+    text-align: center;
+    letter-spacing: 0.03em;
+    margin-bottom: 10px;
+
+    color: var(--primary-text-color);
+}
+
+.section .section-position {
+
+    font-size: 16px;
+    line-height: 1.18;
+    text-align: center;
+    letter-spacing: 0.03em;
+
+}
+
+/* Підвал */
+/* Лого перша частина #2196F3 */
+/* Лого друга частина #FFFFFF */
+/* Адреса #FFFFFF */
+/* пошта і телефон rgba(255, 255, 255, 0.6) */
+
+/* 2-га сторінка фон background: #E5E5E5 */
+.footer {
+    background-color: var(--bacground-color-hero);
+    padding-bottom: 60px;
+    padding-top: 60px;
+
+}
+
+.footer-logo {
+    display: block;
+}
+
+.footer .footer-logo {
+    font-family: 'Raleway';
+    /* font-style: normal; */
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 1.19;
+    letter-spacing: 0.03em;
+    margin-bottom: 20px;
+    text-decoration: none;
+}
+
+
+
+.footer-logo .logo-web-footer {
+    color: var(--text-link);
+}
+
+.footer-logo .logo-studio-footer {
+    color: var(--hero);
+
+}
+
+/* .adress {
+    margin-top: 20px;
+} */
+
+
+.adress .adr {
+    font-size: 14px;
+    line-height: 1.71;
+    letter-spacing: 0.03em;
+
+    color: var(--hero);
+    text-decoration: none;
+
+}
+
+.adress .link {
+    font-size: 14px;
+    line-height: 1.71;
+    letter-spacing: 0.03em;
+
+    color: var(--footer-color-text);
+
+    text-decoration: none;
+}
+
+.adress-item:not(:last-child) {
+    margin-bottom: 9px;
+}
+
+.adress .link:hover,
+.adress .link:focus {
+    color: var(--text-link);
+}
+
+
+/* П О Р Т Ф О Л І О  */
+
+/* Головна частина сторінки */
+.portfolio-title {
+    display: none;
+}
+
+.section-portfolio {
+    background-color: var(--hero);
+    padding-top: 94px;
+    padding-bottom: 94px;
+
+}
+
+/* КНОПКИ */
+.button-portfolio {
+    display: flex;
+    margin-bottom: 50px;
+
+    list-style-type: none;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 50px;
+    margin-top: 0;
+
+
+
+}
+
+.button-portfolio .item+.item {
+    margin-left: 8px;
+
+}
+
+.button-portfolio .btn:hover,
+.button-portfolio .btn:focus {
+    background-color: var(--text-link);
+    color: var(--hero);
+}
+
+.button-portfolio .btn {
+    font-family: inherit;
+    padding: 6px 22px;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.62;
+    text-align: center;
+    letter-spacing: 0.03em;
+    background-color: var(--button-bcg);
+
+    color: var(--primary-text-color);
+
+    cursor: pointer;
+}
+
+.button-portfolio .btn {
+    border-radius: 4px;
+}
+
+/*СПИСОК КЕЙСІВ КОМАНДИ - картинки з підписами */
+
+
+.cases {
+    display: flex;
+    flex-wrap: wrap
+}
+
+.cases-block-portfolio {
+    padding: 20px 0;
+    border-bottom: 1px solid var(--color-line);
+
+
+}
+
+.cases .cases-items {
+    margin-right: 30px;
+    margin-bottom: 30px;
+}
+
+.cases-items:nth-child(3n) {
+    margin-right: 0;
+}
+
+.cases-items:nth-last-child(-n + 3) {
+    margin-bottom: 0;
+}
+
+.cases .cases-title {
+
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 2;
+    letter-spacing: 0.06em;
+    padding-top: 20px;
+    padding-right: 24px;
+    padding-left: 24px;
+
+    color: var(--primary-text-color);
+}
+
+.cases .case-text {
+    font-size: 16px;
+    line-height: 1.88;
+    letter-spacing: 0.03em;
+    padding-right: 24px;
+    padding-left: 24px;
+    padding-bottom: 20px;
+
+}
