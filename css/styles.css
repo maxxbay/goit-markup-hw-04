@@ -292,6 +292,20 @@ img {
 
 }
 
+/* SECTION середина іконки */
+.section-icons {
+
+    outline: 1px solid tomato;
+    background: #F5F4FA;
+    border-radius: 4px;
+    margin-bottom: 30px;
+}
+
+.computer-icon {
+    box-sizing: border-box;
+    display: inline-flex;
+}
+
 /* SECTION IMAGES */
 
 .section .secondary-title {
