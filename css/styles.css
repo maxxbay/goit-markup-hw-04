@@ -19,6 +19,8 @@ html {
     --logo-studio: #000000;
     --button-bcg: #F5F4FA;
     --color-line: #ECECEC;
+    --color-border-icon: #AFB1B8;
+
 
 
 }
@@ -292,16 +294,16 @@ img {
 
 }
 
-/* SECTION середина іконки */
+/* SECTION середина - іконки */
 .section-icons {
 
     outline: 1px solid tomato;
-    background: #F5F4FA;
+    background: var(--button-bcg);
     border-radius: 4px;
     margin-bottom: 30px;
 }
 
-.computer-icon {
+.icon.image-icon {
     box-sizing: border-box;
     display: inline-flex;
 }
@@ -384,6 +386,67 @@ img {
     letter-spacing: 0.03em;
 
 }
+
+/*  Постійні клієнти */
+
+.clients {
+    padding-top: 94px;
+    padding-bottom: 94px;
+}
+
+.clients-title {
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.16;
+    text-align: center;
+    letter-spacing: 0.03em;
+    color: var(--primary-text-color);
+    margin-bottom: 50px;
+}
+
+.clients-list {
+    display: flex;
+}
+
+
+.client-icons {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-width: 170px;
+    min-height: 92px;
+    border: 1px solid var(--color-border-icon);
+    border-radius: 4px;
+
+}
+
+.client-icons:hover,
+.client-icons:focus {
+    border-color: var(--text-link);
+}
+
+.client-link:hover,
+.client-link:focus {
+    fill: var(--text-link)
+}
+
+
+
+
+.client-icons:not(:last-child) {
+    margin-right: 30px;
+}
+
+.client-names {
+    display: inline-block;
+
+}
+
+.client-link {
+    fill: var(--color-border-icon);
+}
+
+
 
 /* Підвал */
 /* Лого перша частина #2196F3 */
