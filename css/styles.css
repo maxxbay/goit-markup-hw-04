@@ -127,8 +127,8 @@ img {
     color: var(--text-link);
 }
 
-.header-nav .link:hover,
-.header-nav .link:focus {
+.header-nav .accent:hover .icon,
+.header-nav .accent:focus .icon {
     color: var(--text-link);
 }
 
@@ -154,16 +154,40 @@ img {
     text-decoration: none;
 }
 
-.header-contacting .link:hover,
-.header-contacting .link:focus {
-    color: var(--text-link);
-}
 
 .line {
     color: var(--color-line);
     margin-top: 0;
     margin-bottom: 0;
 }
+
+/* Іконки шапки */
+.header-contacting .icon {
+    display: inline-flex;
+    width: 16px;
+    height: 12px;
+    margin-right: 10px;
+
+    align-items: center;
+    text-decoration: none;
+}
+
+.icon {
+    display: inline-flex;
+    fill: var(--text-color);
+
+}
+
+.item .link:hover,
+.item .link:focus {
+    color: var(--text-link);
+}
+
+.item:hover .icon,
+.item:focus .icon {
+    fill: var(--text-link);
+}
+
 
 /* Головна сторінка */
 /* фон головного заголовку background: #2F303A */
@@ -186,7 +210,7 @@ img {
 /* HERO */
 
 .hero {
-    background-color: #2F303A;
+    box-sizing: border-box;
     padding: 200px 0;
 
 
@@ -212,6 +236,25 @@ img {
     margin-bottom: 30px;
 }
 
+/* Background-hero */
+
+.hero {
+    max-width: 1600px;
+    height: 600px;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: #C4C4C4;
+    text-align: center;
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4),
+            rgba(47, 48, 58, 0.4)),
+        url("../images/bckg-hero.jpg");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25))
+}
+
+
 /* Кнопка */
 .hero .button {
     display: inline;
@@ -236,6 +279,7 @@ img {
     line-height: 1.88;
     display: flex;
     align-items: center;
+    justify-items: center;
     text-align: center;
     letter-spacing: 0.06em;
 
@@ -294,13 +338,19 @@ img {
 
 }
 
+
+.section-secondary-block {
+
+    background-color: var(--hero);
+}
+
 /* SECTION середина - іконки */
 .section-icons {
 
-    outline: 1px solid tomato;
     background: var(--button-bcg);
     border-radius: 4px;
     margin-bottom: 30px;
+
 }
 
 .icon.image-icon {
@@ -340,7 +390,8 @@ img {
 
 
 .section-secondary-block {
-    padding: 30px 0;
+    padding-top: 30px;
+    padding-bottom: 16px;
 }
 
 .section .section-title-second {
@@ -387,6 +438,93 @@ img {
 
 }
 
+.hyr {
+    width: 150px;
+    height: 150px;
+}
+
+.bcg-item {
+    background-color: var(--hero);
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12),
+        0px 1px 1px rgba(0, 0, 0, 0.14),
+        0px 2px 1px rgba(0, 0, 0, 0.2);
+    border-radius: 0px 0px 4px 4px;
+}
+
+/* Наша команда соціальні мережі */
+
+.link-list {
+    display: flex;
+    padding-bottom: 30px;
+    justify-content: center;
+
+}
+
+.socials {
+    display: block;
+    padding: 12px;
+
+}
+
+.socials:not(:last-child) {
+    margin-right: 10px;
+}
+
+.socials {
+    width: 44px;
+    height: 44px;
+    /* border-radius: 50%; */
+}
+
+.link-list .soc-in {
+    display: block;
+
+    border-radius: 50%;
+    transition: background-color var(--color-border-icon), fill var(--color-border-icon);
+}
+
+.soc-in .web-icon {
+    display: block;
+    background-color: var(--hero);
+
+    fill: var(--color-border-icon);
+    display: block;
+
+}
+
+.link-list .socials:hover .web-icon,
+.link-list .socials:focus .web-icon {
+    background-color: var(--text-link);
+    fill: var(--hero);
+
+}
+
+.link-list .socials:hover,
+.link-list .socials:focus {
+    background-color: var(--text-link);
+    border-radius: 50%;
+
+}
+
+
+
+/* .link-list .soc-in:hover .web-icon,
+.link-list .soc-in:focus .web-icon {
+    background-color: var(--text-link);
+    fill: var(--hero);
+} */
+
+.link-list .web-icon-svg {
+    background-color: var(--hero);
+}
+
+/* .web-icon {
+    display: block;
+    background-fill: var(--hero);
+
+    fill: var(--color-border-icon);
+} */
+
 /*  Постійні клієнти */
 
 .clients {
@@ -425,11 +563,10 @@ img {
     border-color: var(--text-link);
 }
 
-.client-link:hover,
-.client-link:focus {
-    fill: var(--text-link)
+.client-icons:hover .client-link,
+.client-icons:focus .client-link {
+    fill: var(--text-link);
 }
-
 
 
 
@@ -437,18 +574,17 @@ img {
     margin-right: 30px;
 }
 
+
+
 .client-names {
-    display: inline-block;
-
-}
-
-.client-link {
     fill: var(--color-border-icon);
 }
 
 
 
 /* Підвал */
+
+
 /* Лого перша частина #2196F3 */
 /* Лого друга частина #FFFFFF */
 /* Адреса #FFFFFF */
@@ -459,12 +595,15 @@ img {
     background-color: var(--bacground-color-hero);
     padding-bottom: 60px;
     padding-top: 60px;
-
 }
 
-.footer-logo {
+/* .footer-logo {
     display: block;
-}
+} */
+/* .footer-blocks {
+    display: flex;
+    align-items: baseline;
+} */
 
 .footer .footer-logo {
     font-family: 'Raleway';
@@ -473,11 +612,14 @@ img {
     font-size: 26px;
     line-height: 1.19;
     letter-spacing: 0.03em;
-    margin-bottom: 20px;
+    /* margin-bottom: 20px; */
     text-decoration: none;
 }
 
 
+.footer-main {
+    display: flex;
+}
 
 .footer-logo .logo-web-footer {
     color: var(--text-link);
@@ -488,9 +630,9 @@ img {
 
 }
 
-/* .adress {
+.adress {
     margin-top: 20px;
-} */
+}
 
 
 .adress .adr {
@@ -522,6 +664,113 @@ img {
     color: var(--text-link);
 }
 
+
+
+/* ДРУГА ЧАСТИНА - ПОСИЛАННЯ ПІДВАЛУ */
+
+/* .footer {
+    display: flex;
+
+
+} */
+/* 
+.down-main .footer-second {
+    display: flex;
+    align-items: baseline;
+
+} */
+
+.footer-second {
+    display: inline-block;
+    margin-left: 70px;
+    /* vertical-align: top; */
+}
+
+.down-main {
+    display: inline-block;
+}
+
+.footer-link-item {
+    text-transform: uppercase;
+    display: inline-flex;
+    margin-bottom: 20px;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.03em;
+    color: var(--hero);
+}
+
+.adress {
+    display: flex;
+}
+
+.footer-link-list {
+    display: flex;
+    justify-content: center;
+
+}
+
+.footer-socials {
+    display: block;
+    padding: 12px;
+
+}
+
+.footer-socials:not(:last-child) {
+    margin-right: 10px;
+}
+
+.footer-socials {
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+    background-color: rgba(255, 255, 255, 0.1);
+}
+
+.footer-link-list .footer-soc-in {
+    display: block;
+
+    border-radius: 50%;
+    /* transition: background-color rgba(255, 255, 255, 0.1),
+        fill rgba(255, 255, 255, 0.1); */
+}
+
+.footer-soc-in .footer-web-icon {
+    display: block;
+
+    fill: var(--hero);
+    display: block;
+
+}
+
+.footer-link-list .footer-socials:hover .footer-web-icon,
+.footer-link-list .footer-socials:focus .footer-web-icon {
+    background-color: var(--text-link);
+    fill: var(--hero);
+
+}
+
+.footer-link-list .footer-socials:hover,
+.footer-link-list .footer-socials:focus {
+    background-color: var(--text-link);
+    border-radius: 50%;
+
+}
+
+
+
+/* .link-list .soc-in:hover .web-icon,
+.link-list .soc-in:focus .web-icon {
+    background-color: var(--text-link);
+    fill: var(--hero);
+} */
+
+.link-list .web-icon-svg {
+    background-color: var(--hero);
+}
 
 /* П О Р Т Ф О Л І О  */
 
