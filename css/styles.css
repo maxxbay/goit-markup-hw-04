@@ -676,20 +676,21 @@ img {
 
 
 .footer-second {
-    display: inline-flex;
+    display: flex;
     flex-direction: column;
+    
     margin-left: 70px;
 }
 
 .down-main {
     display: inline-block;
-        justify-content: baseline;
+    justify-content: baseline;
 
 }
 
 .footer-link-item {
     text-transform: uppercase;
-    display: inline-flex;
+    display: flex;
     margin-bottom: 20px;
     font-family: 'Roboto';
     font-style: normal;
@@ -736,25 +737,31 @@ img {
     /* transition: background-color rgba(255, 255, 255, 0.1),
         fill rgba(255, 255, 255, 0.1); */
 }
+.link-list .web-icon-svg {
+    background-color: var(--hero);
+}
 
 .footer-soc-in .footer-web-icon {
-    display: block;
-
+    display: flex;
     fill: var(--hero);
     
 }
+/* .footer-soc-in {
+    display: flex;
+    width: 100%;
+    height: 100%;
+} */
 
-.footer-link-list .footer-socials:hover .footer-web-icon,
-.footer-link-list .footer-socials:focus .footer-web-icon {
+.footer-socials .footer-soc-in:hover,
+.footer-socials .footer-soc-in:focus {
     background-color: var(--text-link);
-    fill: var(--hero);
-
+    /* fill: var(--hero); */
 }
 
 .footer-link-list .footer-socials:hover,
 .footer-link-list .footer-socials:focus {
     background-color: var(--text-link);
-    border-radius: 50%;
+    /* border-radius: 50%; */
 
 }
 
@@ -766,9 +773,6 @@ img {
     fill: var(--hero);
 } */
 
-.link-list .web-icon-svg {
-    background-color: var(--hero);
-}
 
 /* П О Р Т Ф О Л І О  */
 
