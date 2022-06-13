@@ -123,13 +123,19 @@ img {
     text-decoration: none;
 }
 
+.icon {
+    display: inline-flex;
+    fill: var(--text-color);
+
+}
+
 .header-nav .link.current {
     color: var(--text-link);
 }
 
-.header-nav .accent:hover .icon,
-.header-nav .accent:focus .icon {
-    color: var(--text-link);
+.header-contacting .accent:hover .icon,
+.header-contacting .accent:focus .icon {
+    fill: var(--text-link);
 }
 
 .header-contacting {
@@ -172,21 +178,17 @@ img {
     text-decoration: none;
 }
 
-.icon {
-    display: inline-flex;
-    fill: var(--text-color);
-
-}
 
 .item .link:hover,
 .item .link:focus {
     color: var(--text-link);
 }
 
+/* 
 .item:hover .icon,
 .item:focus .icon {
     fill: var(--text-link);
-}
+} */
 
 
 /* Головна сторінка */
@@ -240,6 +242,7 @@ img {
 
 .hero {
     max-width: 1600px;
+    width: 100%;
     height: 600px;
     margin-left: auto;
     margin-right: auto;
@@ -492,15 +495,14 @@ img {
 
 }
 
-.link-list .socials:hover .web-icon,
-.link-list .socials:focus .web-icon {
-    background-color: var(--text-link);
+.link-list .soc-in:hover .web-icon,
+.link-list .soc-in:focus .web-icon {
     fill: var(--hero);
 
 }
 
-.link-list .socials:hover,
-.link-list .socials:focus {
+.link-list .soc-in:hover,
+.link-list .soc-in:focus {
     background-color: var(--text-link);
     border-radius: 50%;
 
