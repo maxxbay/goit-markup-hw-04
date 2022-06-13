@@ -619,6 +619,8 @@ img {
 
 .footer-main {
     display: flex;
+    align-items: baseline;
+
 }
 
 .footer-logo .logo-web-footer {
@@ -790,7 +792,7 @@ img {
 .button-portfolio {
     display: flex;
     margin-bottom: 50px;
-
+    border: transparent;
     list-style-type: none;
     display: flex;
     justify-content: center;
@@ -810,6 +812,10 @@ img {
 .button-portfolio .btn:focus {
     background-color: var(--text-link);
     color: var(--hero);
+    box-shadow: inset 0px 3px 1px rgba(0, 0, 0, 0.1),
+        0px 1px 2px rgba(0, 0, 0, 0.08),
+        0px 2px 2px rgba(0, 0, 0, 0.12);
+    border-radius: 4px;
 }
 
 .button-portfolio .btn {
@@ -823,7 +829,7 @@ img {
     background-color: var(--button-bcg);
 
     color: var(--primary-text-color);
-
+    border: none;
     cursor: pointer;
 }
 
@@ -841,14 +847,37 @@ img {
 
 .cases-block-portfolio {
     padding: 20px 0;
-    border-bottom: 1px solid var(--color-line);
+    border-top: none;
+    border: 1px solid #EEEEEE;
+    /* outline: 1px solid tomato; */
+}
 
+/* .cases-img {
+    border: none;
+} */
+
+.cases .cases-items {
+
+    margin-right: 30px;
+    margin-bottom: 30px;
+    background: #FFFFFF;
+    /* border: 1px solid #EEEEEE; */
 
 }
 
-.cases .cases-items {
-    margin-right: 30px;
-    margin-bottom: 30px;
+/* .cases-items {
+ 
+    gap: 30px;
+} */
+.cases-img {
+    display: block;
+}
+
+.cases .cases-items:hover,
+.cases .cases-items:focus {
+    box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12),
+        0px 4px 4px rgba(0, 0, 0, 0.06),
+        1px 4px 6px rgba(0, 0, 0, 0.16);
 }
 
 .cases-items:nth-child(3n) {
@@ -865,7 +894,6 @@ img {
     font-size: 18px;
     line-height: 2;
     letter-spacing: 0.06em;
-    padding-top: 20px;
     padding-right: 24px;
     padding-left: 24px;
 
@@ -878,6 +906,5 @@ img {
     letter-spacing: 0.03em;
     padding-right: 24px;
     padding-left: 24px;
-    padding-bottom: 20px;
 
 }
