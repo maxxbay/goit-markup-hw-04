@@ -546,11 +546,13 @@ img {
 }
 
 .client-icons {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    min-width: 170px;
-    min-height: 92px;
+    /* display: flex; */
+    /* align-items: center;
+    justify-content: center; */
+    width: 170px;
+    width: 100%;
+    height: 92px;
+    height: 100%;
     border: 1px solid var(--color-border-icon);
     border-radius: 4px;
 }
@@ -672,26 +674,17 @@ img {
 
 /* ДРУГА ЧАСТИНА - ПОСИЛАННЯ ПІДВАЛУ */
 
-/* .footer {
-    display: flex;
-
-
-} */
-/* 
-.down-main .footer-second {
-    display: flex;
-    align-items: baseline;
-
-} */
 
 .footer-second {
-    display: inline-block;
+    display: inline-flex;
+    flex-direction: column;
     margin-left: 70px;
-    /* vertical-align: top; */
 }
 
 .down-main {
     display: inline-block;
+        justify-content: baseline;
+
 }
 
 .footer-link-item {
@@ -718,7 +711,7 @@ img {
 }
 
 .footer-socials {
-    display: block;
+    display: flex;
     padding: 12px;
 
 }
@@ -729,13 +722,15 @@ img {
 
 .footer-socials {
     width: 44px;
+    width: 100%;
     height: 44px;
+    height: 100%;
     border-radius: 50%;
     background-color: rgba(255, 255, 255, 0.1);
 }
 
 .footer-link-list .footer-soc-in {
-    display: block;
+    /* display: flex; */
 
     border-radius: 50%;
     /* transition: background-color rgba(255, 255, 255, 0.1),
@@ -746,8 +741,7 @@ img {
     display: block;
 
     fill: var(--hero);
-    display: block;
-
+    
 }
 
 .footer-link-list .footer-socials:hover .footer-web-icon,
